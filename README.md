@@ -38,16 +38,15 @@ As the teacher workforce continues to become younger and less experienced nation
 Our project addresses this question by providing an interactive tool that allows users to select a school and set a distance to see how teacher salaries at that school and sale prices around that school compare to those of all Chicago Public Schools teachers and all Cook County homes.
 
 ### Data Selection Notes
-1. Assessor Data
-    a. Keep sales >= $10000
-    b. Remove observations with NaN values in both 'apts' (number of apartments) and 'n_units' (number of units within condominium complex) because it is unclear what type of properties these are
-    c. Set observations with '0' apts equal to '1' and those with negative apts to the absolute value of apts
-    d. Keep observations where 'most_recent_sale' == 1 to keep the most recent sale on a property
-    e. Remove 30,000 additional duplicates on 'pin' by keeping the most recent 'sale_date' observation for each 'pin'
-    f. Keep single family home and condominiums only to analyze data on sales of individual properties, not apartment buildings
-2. Teacher Salary Data
-    a. Keep full-time employees
-    b. Keep people with job title:
-        i. Includes the word 'Teacher'
-        ii. Doesn't include the words: 'Assistant', 'Asst', 'Specialist', 'Analyst', 'Recruitment', 'Part-Time'
-    c. Filter out teachers who are not linked (through their Finance ID) to a specific school/school ID (approximately 600 observations dropped)
+##### Assessor Data
+1. Keep sales >= $10000
+2. Remove observations with NaN values in both 'apts' (number of apartments) and 'n_units' (number of units within condominium complex) because it is unclear what type of properties these are
+3. Set observations with '0' apts equal to '1' and those with negative apts to the absolute value of apts
+4. Keep observations where 'most_recent_sale' == 1 to keep the most recent sale on a property
+5. Remove 30,000 additional duplicates on 'pin' by keeping the most recent 'sale_date' observation for each 'pin'
+6. Keep single family home and condominiums only to analyze data on sales of individual properties, not apartment buildings
+
+##### Teacher Salary Data
+1. Keep full-time employees
+2. Keep people with job title: (a) Includes the word 'Teacher'; (b) Doesn't include the words: 'Assistant', 'Asst', 'Specialist', 'Analyst', 'Recruitment', 'Part-Time'
+3. Filter out teachers who are not linked (through their Finance ID) to a specific school/school ID (approximately 600 observations dropped)
