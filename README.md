@@ -1,16 +1,9 @@
-# CAN CHICAGO TEACHERS AFFORD TO LIVE WHERE THEY TEACH?
+# Can Chicago Teachers Afford to Live Where They Teach?
 Analyzing teacher salaries and nearby property values for Chicago Public Schools
 
 LauraMargaret Burbach, Jonathan Rockower, Mike Feldman
 
-## README CONTENTS
-0. How to Run School Finder Application
-1. Files
-2. Project Goals and Accomplishments
-    (also in burbach-jrockower-mikefeldman.pdf)
-3. Data Selection Notes
-
-### HOW TO RUN SCHOOL FINDER APPLICATION
+### How to Run School Finder Application
 1. Install Python3.7 from source:
     https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/
 2. Run install shell script
@@ -25,7 +18,7 @@ LauraMargaret Burbach, Jonathan Rockower, Mike Feldman
       files without pulling via API. Without `[-a]`, the application takes us
       about 30 seconds to run.
 
-### FILES
+### Files
 1. `README.txt`
 2. `requirements.txt`
 3. `install.sh`
@@ -35,7 +28,7 @@ LauraMargaret Burbach, Jonathan Rockower, Mike Feldman
 7. `school_class.py`
 8. `main.py`
 
-### PROJECT GOALS AND ACCOMPLISHMENTS
+### Project Goals and Accomplishments
 Our project set out to answer the question: Can Chicago Public Schools teachers afford to buy homes near the schools where they teach?
 
 The impetus for this work was the October 2019 Chicago Teachers Union strike, particularly the Union’s ask for teacher and staff raises in response to the rising cost of living. Much of the existing research on property values and schools is directed at parents looking at school attendance zones. We wanted to reframe property analyses from a teacher perspective, considering locations close to the school, but irrespective of attendance boundaries.
@@ -44,7 +37,7 @@ As the teacher workforce continues to become younger and less experienced nation
 
 Our project addresses this question by providing an interactive tool that allows users to select a school and set a distance to see how teacher salaries at that school and sale prices around that school compare to those of all Chicago Public Schools teachers and all Cook County homes.
 
-### DATA SELECTION NOTES
+### Data Selection Notes
 1. Assessor Data
     a. Keep sales >= $10000
     b. Remove observations with NaN values in both 'apts' (number of apartments) and 'n_units' (number of units within condominium complex) because it is unclear what type of properties these are
