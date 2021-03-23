@@ -3,6 +3,8 @@ Analyzing teacher salaries and nearby property values for Chicago Public Schools
 
 LauraMargaret Burbach, Jonathan Rockower, Mike Feldman
 
+See [here](https://github.com/FeldmanMike/school-finder/blob/master/burbach-jrockower-mikefeldman.pdf) for more detailed explanation of application
+
 ### How to Run School Finder Application
 1. Install Python3.7 from source:
     https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/
